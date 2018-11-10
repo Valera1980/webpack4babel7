@@ -15,6 +15,7 @@ const promOne = () => {
     return new Promise((resolve,reject)=>{
        setTimeout(() => {
             resolve({...{a:33},...{b:66}});
+            // reject('error');
        }, 500);
     })
 }

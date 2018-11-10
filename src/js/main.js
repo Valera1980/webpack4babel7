@@ -16,6 +16,7 @@ window.addEventListener('load', function () {
         .then(data => {
             alert(JSON.stringify(data));
         })
+        .catch(e => alert('ERROR'));
         //const result = add(66,88);
         //const result = addObj();
         //alert(result);
