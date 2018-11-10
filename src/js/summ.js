@@ -11,5 +11,21 @@ const addObj = () => {
     const {a , b} = obj;
     return a + b;
 }
+const promOne = () => {
+    return new Promise((resolve,reject)=>{
+       setTimeout(() => {
+            resolve({...{a:33},...{b:66}});
+       }, 500);
+    })
+}
+// async function asyncOne() {
+//      const data = await promOne();
+//      return data;
+// }
 
-export { add,addObj };
+const asyncOne = async () => {
+    const data = await promOne();
+    return data;
+}
+
+export { add,addObj, asyncOne, promOne};
