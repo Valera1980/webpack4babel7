@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "./node_modules/.bin/babel src --out-dir lib",
-    "w": "webpack --config webpack.config.js"
+    "w": "webpack --config webpack.config.js",
+    "p": "parcel build ./src/js/main.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "@babel/preset-env": "^7.1.5",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
+    "cssnano": "^4.1.7",
     "node-sass": "^4.10.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
